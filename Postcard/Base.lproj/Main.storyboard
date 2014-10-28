@@ -13,6 +13,7 @@
                         <viewControllerLayoutGuide type="bottom" id="wvd-Bx-ZZu"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="rAm-4a-75I">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SagradaFamilia.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="7UW-6w-N0S">
@@ -72,6 +73,14 @@
                                     <rect key="frame" x="27" y="269" width="323" height="30"/>
                                 </variation>
                             </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Mc-Ri-3nO">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="27" y="307" width="323" height="30"/>
+                                </variation>
+                            </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aQ6-W8-OTX">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="1" green="0.68893691139619329" blue="0.17040171799515602" alpha="1" colorSpace="calibratedRGB"/>
@@ -95,32 +104,35 @@
                                     <rect key="frame" x="27" y="86" width="323" height="67"/>
                                 </variation>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Enter Message" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Mc-Ri-3nO">
-                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IrJ-ps-2Ep">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
                                 <variation key="widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="27" y="307" width="323" height="30"/>
+                                    <rect key="frame" x="27" y="176" width="215" height="29"/>
                                 </variation>
-                            </textField>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="OTx-6T-hbZ"/>
                                 <exclude reference="I11-R9-TA1"/>
+                                <exclude reference="6Mc-Ri-3nO"/>
                                 <exclude reference="aQ6-W8-OTX"/>
                                 <exclude reference="yfz-fx-RjN"/>
-                                <exclude reference="6Mc-Ri-3nO"/>
+                                <exclude reference="IrJ-ps-2Ep"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="OTx-6T-hbZ"/>
                                 <include reference="I11-R9-TA1"/>
+                                <include reference="6Mc-Ri-3nO"/>
                                 <include reference="aQ6-W8-OTX"/>
                                 <include reference="yfz-fx-RjN"/>
-                                <include reference="6Mc-Ri-3nO"/>
+                                <include reference="IrJ-ps-2Ep"/>
                             </mask>
                         </variation>
                     </view>
@@ -129,6 +141,7 @@
                         <outlet property="enterNameTextField" destination="I11-R9-TA1" id="kQ9-E6-hGU"/>
                         <outlet property="mailButton" destination="aQ6-W8-OTX" id="MfU-mh-QcX"/>
                         <outlet property="messageLabel" destination="yfz-fx-RjN" id="x69-VS-mmk"/>
+                        <outlet property="nameLabel" destination="IrJ-ps-2Ep" id="qv9-Se-cDu"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
